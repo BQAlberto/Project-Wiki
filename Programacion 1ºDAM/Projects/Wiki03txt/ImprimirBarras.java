@@ -2,16 +2,11 @@ package Wiki03txt;
 
 public class ImprimirBarras {
 
-    private static int cantidadLetras = Diccionario.getObtenerPalabra().length();
-    public static void imprimirBarras (int cantidadLetras){
-        for (int i = 0; i<cantidadLetras; i++){
-            System.out.print("_");
+    static void imprimirBarras(char[] barras) {    // Método para imprimir las barras y meter espacios entre ellas.
+        for (char c : barras) {
+            System.out.print(c + " ");
         }
-        System.out.println();
-    }
-
-    public static void getImprimirBarras(){
-        imprimirBarras(cantidadLetras);
+            System.out.println();
     }
 
 }
